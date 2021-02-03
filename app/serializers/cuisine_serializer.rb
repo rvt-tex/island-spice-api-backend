@@ -1,4 +1,4 @@
 class CuisineSerializer
   include FastJsonapi::ObjectSerializer
-  attributes 
+  attributes :name, :dishes, :comments, :likes
 end
