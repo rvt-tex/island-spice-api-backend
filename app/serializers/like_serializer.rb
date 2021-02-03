@@ -1,4 +1,4 @@
 class LikeSerializer
   include FastJsonapi::ObjectSerializer
-  attributes 
+  attributes :cuisine, :dish, :comment
 end
