@@ -17,7 +17,7 @@ class CuisinesController < ApplicationController
     def destroy 
         cuisine = Cuisine.find_by_id(params[:id])
         if cuisine.destroy
-            Cuisines = Cuisine.all 
+            cuisines = Cuisine.all 
             render json: CuisineSerializer.new(cuisines)
         else
             render json: { message: "error"}  

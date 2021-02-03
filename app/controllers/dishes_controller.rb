@@ -18,7 +18,7 @@ class DishesController < ApplicationController
     def destroy 
         dish = Dish.find_by_id(params[:id])
         if dish.destroy
-            Dishes = Dish.all 
+            dishes = Dish.all 
             render json: DishSerializer.new(dishes)
         else
             render json: { message: "error"}  
