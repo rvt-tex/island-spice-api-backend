@@ -11,7 +11,7 @@ class DishesController < ApplicationController
         if dish.save 
             render json: DishSerializer.new(dish)
         else 
-            render json: {errors: pin.errors.full_messages}, status: :unprocessible_entity
+            render json: {errors: dish.errors.full_messages}, status: :unprocessible_entity
         end 
     end 
 
