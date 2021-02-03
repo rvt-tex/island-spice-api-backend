@@ -1,4 +1,4 @@
 class DishSerializer
   include FastJsonapi::ObjectSerializer
-  attributes 
+  attributes :title, :img_url, :description, :cuisine_id, :cuisine, :likes, :comments 
 end
