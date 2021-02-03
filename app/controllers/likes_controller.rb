@@ -5,6 +5,4 @@ class LikesController < ApplicationController
         render json: likes, include: [:dishes, :cuisines, :comments] 
     end 
 
-
-
 end
